@@ -7,6 +7,7 @@ import ImpactStats from '../components/Home/impactstats/ImpactStats'
 import MoldSection from '../components/Home/MoldSection/MoldSection'
 import ServicesSection from '../components/Home/ServicesSection/ServicesSection'
 import VideoSection from '../components/Home/VideoSection/VideoSection'
+import Newsletter from '../components/Newsletter'
 import Footer from '../layout/footer/Footer'
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <VideoSection />
       <ServicesSection />
       <BookSection />
+      <Newsletter />
       <Footer />
     </div>
   )
