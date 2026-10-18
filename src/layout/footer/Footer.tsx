@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className=" bg-footer-dark text-white">
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-18 pb-10 md:p-4 md:pb-10 lg:p-10">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-6 xl:gap-18 pb-10 md:p-4 md:pb-10 lg:p-10">
         <div className="basis-2/5 flex flex-col gap-4 p-6 md:p-2">
           <a className="btn btn-ghost text-xl">
             <img src="./images/logo.png" alt="Tunde Logo" />
