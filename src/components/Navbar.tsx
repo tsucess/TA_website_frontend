@@ -7,7 +7,7 @@ const Navbar = () => {
  
 
   return (
-    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between   lg:p-4 lg:px-10 gap-2  text-white">
+    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between   lg:p-4 lg:px-10 lg:py-10 gap-2  text-white">
       <div className="lg:hidden">
         <MobileNavbar />
       </div>
@@ -15,7 +15,7 @@ const Navbar = () => {
         <img src="./images/logo.png" alt="Tunde Logo" />
       </a>
       <div className="navbar-center hidden lg:flex">
-        <ul className="flex gap-2.5 px-1 text-[1.2vw] font-Oswald">
+        <ul className="flex gap-2.5 lg:gap-4 px-1 text-[1.2vw] font-Oswald">
           {navLinks.map((link, i) => (
             <li key={i}>
               <a

@@ -1,8 +1,14 @@
-import React from 'react'
+import Hero from '../components/services/Hero'
+import HowCanIHelpSections from '../components/services/HowCanIHelpSections'
+import ServicesSection from '../components/services/ServicesSection'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <Hero />
+      <HowCanIHelpSections />
+      <ServicesSection />
+    </div>
   )
 }
 

@@ -34,9 +34,14 @@
 
 @theme {
   --color-primary-dark: #000000C9;
+  --color-primary-gray: #272C33;
   --color-footer-dark: #07000E;
   --color-text-dark: #000000;
   --color-text-white: #ffffff;
+  --color-text-ash: #A3A3A3;
+
+  
+  --color-line-ash: #D9D9D9;
 
   --font-Instrument: "Instrument Sans", sans-serif;
   --font-Oswald: "Oswald", sans-serif;

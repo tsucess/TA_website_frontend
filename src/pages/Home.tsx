@@ -1,12 +1,13 @@
 // import React from 'react'
-import BelieveSection from '../components/Home/BelieveSection/BelieveSection'
-import BioSection from '../components/Home/BioSection/BioSection'
-import BookSection from '../components/Home/BookSection/BookSection'
-import Hero from '../components/Home/hero/Hero'
-import ImpactStats from '../components/Home/impactstats/ImpactStats'
-import MoldSection from '../components/Home/MoldSection/MoldSection'
-import ServicesSection from '../components/Home/ServicesSection/ServicesSection'
-import VideoSection from '../components/Home/VideoSection/VideoSection'
+import BelieveSection from '../components/Home/BelieveSection'
+import BioSection from '../components/Home/BioSection'
+import BookSection from '../components/Home/BookSection'
+import Hero from '../components/Home/Hero'
+import ImpactStats from '../components/Home/ImpactStats'
+import MoldSection from '../components/Home/MoldSection'
+import ServicesSection from '../components/Home/ServicesSection'
+import VideoSection  from '../components/Home/VideoSection'
+import TestimonialsSection from '../components/Home/TestimonialsSection'
 import Newsletter from '../components/Newsletter'
 import Footer from '../layout/footer/Footer'
 
@@ -21,6 +22,7 @@ const Home = () => {
       <VideoSection />
       <ServicesSection />
       <BookSection />
+      <TestimonialsSection />
       <Newsletter />
       <Footer />
     </div>
