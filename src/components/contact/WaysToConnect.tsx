@@ -20,7 +20,7 @@ const WaysToConnect = () => {
             <div className="flex flex-col md:flex-row gap-4 mt-2">
               <a
                 className="w-full flex items-center gap-2 md:gap-1 xl:gap-4  bg-white text-black text-center border-2 justify-center text-[4vw] md:text-[1.4vw] lg:text-[1.6vw] xl:text-[1.2vw] p-2 px-2 xl:px-8 rounded-lg"
-                href="#"
+                href="/speaking#inviteForm"
               >
                 Invite Pastor Tunde <RiArrowRightUpLine />
               </a>

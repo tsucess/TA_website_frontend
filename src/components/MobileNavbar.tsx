@@ -47,7 +47,12 @@ const MobileNavbar = () => {
           </li>
         ))}
         <li className="p-3">
-          <a className="bg-white text-black p-2 rounded">Invite Tunde Adisa</a>
+          <a
+            href="/speaking#inviteForm"
+            className="bg-white text-black p-2 rounded"
+          >
+            Invite Tunde Adisa
+          </a>
         </li>
       </ul>
     </div>

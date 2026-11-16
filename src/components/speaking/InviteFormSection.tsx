@@ -1,3 +1,5 @@
+import { useLayoutEffect, useRef } from "react";
+
 interface FormFieldProps {
   label: string;
   name: string;
@@ -71,6 +73,17 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 );
 
 const InviteFormSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useLayoutEffect(() => {
+    if (window.location.hash === "#inviteForm") {
+      sectionRef.current?.scrollIntoView({
+        behavior: "instant",
+        block: "start",
+      });
+    }
+  }, []);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -81,7 +94,11 @@ const InviteFormSection = () => {
   };
 
   return (
-    <section className="min-h-screen bg-black px-5 py-16 text-white sm:px-8 lg:px-16">
+    <section
+      ref={sectionRef}
+      id="inviteForm"
+      className="min-h-screen bg-black px-5 py-16 text-white sm:px-8 lg:px-16"
+    >
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-16 text-center">

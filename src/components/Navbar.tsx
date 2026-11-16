@@ -1,12 +1,9 @@
 // import { useState } from "react";
 import MobileNavbar from "./MobileNavbar";
-import {navLinks} from "../lib/navLinks";
+import { navLinks } from "../lib/navLinks";
 import { NavLink } from "react-router";
 
-
 const Navbar = () => {
- 
-
   return (
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between   lg:p-4 lg:px-10 lg:py-10 gap-2  text-white">
       <div className="lg:hidden">
@@ -35,7 +32,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="p-2 px-3 mb-2 lg:mb-0 hidden lg:block">
-        <a className="bg-white text-black p-2 rounded font-Instrument">Invite Tunde Adisa</a>
+        <a
+          href="/speaking#inviteForm"
+          className="bg-white text-black p-2 rounded font-Instrument"
+        >
+          Invite Tunde Adisa
+        </a>
       </div>
     </div>
   );

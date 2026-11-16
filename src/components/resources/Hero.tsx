@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="flex gap-4">
             <a
               className="w-50 lg:w-60 xl:w-80 bg-white text-center justify-center text-sm lg:text-[1.8vw] text-black p-2 md:px-6 lg:p-3 rounded-md"
-              href="#"
+              href="/events"
             >
               View Upcoming Events
             </a>

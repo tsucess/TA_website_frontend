@@ -4,7 +4,7 @@ import { RiArrowRightUpLongLine } from "react-icons/ri";
 
 const SpeakingSection = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-12 xl:gap-14 p-6 py-18 md:px-16 lg:py-22">
+    <div  className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-12 xl:gap-14 p-6 py-18 md:px-16 lg:py-22">
       <div className="basis-1/2 flex flex-col justify-end">
         <p className="text-[4vw] md:text-[1.5vw] font-Oswald font-semibold  mb-2">
           SPEAKING & PUBLIC ENGAGEMENT
@@ -37,7 +37,7 @@ const SpeakingSection = () => {
         <div className="flex mt-2">
           <a
             className="flex gap-3 items-center bg-white text-black text-center border-2  justify-center text-sm lg:text-[1.6vw] p-3 px-6 md:px-8 rounded-lg"
-            href=""
+            href="/speaking#inviteForm"
           >
             Invite Tunde Adisa to Speak <RiArrowRightUpLongLine />
           </a>
