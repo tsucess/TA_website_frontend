@@ -2,7 +2,7 @@ import { RiArrowRightUpLongLine } from "react-icons/ri";
 
 const MoldExistSection = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-12 xl:gap-14 p-6 py-18 md:px-16 lg:py-22">
+    <section className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-12 xl:gap-14 p-6 py-18 md:px-16 lg:py-22">
       <div className="basis-1/2 flex flex-col justify-end">
         <p className="text-[4vw] md:text-[1.5vw] font-Oswald font-semibold  mb-2">
           WHY MOLD EXISTS
@@ -36,7 +36,7 @@ const MoldExistSection = () => {
       <div className="basis-1/2 flex justify-center">
         <img src="../images/TA_mold_photo.png" alt="Pst. Tunde Adisa Photo" />
       </div>
-    </div>
+    </section>
   );
 };
 

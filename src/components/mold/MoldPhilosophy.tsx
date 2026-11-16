@@ -1,6 +1,6 @@
 const MoldPhilosophy = () => {
   return (
-    <div className="bg-black text-white p-6 py-18 md:px-16 lg:py-22">
+    <section className="bg-black text-white p-6 py-18 md:px-16 lg:py-22">
       <div>
         <p className="text-[4vw] md:text-[1.5vw] font-Oswald mb-2">
           THE MOLD PHILOSOPHY
@@ -48,7 +48,7 @@ const MoldPhilosophy = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

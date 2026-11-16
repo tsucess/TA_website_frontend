@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import MobileNavbar from "./MobileNavbar";
 import {navLinks} from "../lib/navLinks";
+import { NavLink } from "react-router";
 
 
 const Navbar = () => {
@@ -16,15 +17,19 @@ const Navbar = () => {
       </a>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-2.5 lg:gap-4 px-1 text-[1.2vw] font-Oswald">
-          {navLinks.map((link, i) => (
-            <li key={i}>
-              <a
-                href={link.href}
-                key={link.key}
-                className="text-gray-300 hover:text-white hover:bg-slate-850  font-medium transition-colors uppercase"
+          {navLinks.map((link) => (
+            <li key={link.key}>
+              <NavLink
+                to={link.href}
+                end
+                className={({ isActive }) =>
+                  `w-full text-gray-300 hover:text-white hover:bg-slate-850 font-medium transition-colors uppercase ${
+                    isActive ? "nav-link-active text-white" : ""
+                  }`
+                }
               >
                 {link.label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>

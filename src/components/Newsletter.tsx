@@ -1,6 +1,6 @@
 const Newsletter = () => {
   return (
-    <div className="p-4 py-10 md:p-30 lg:px-40 xl:px-60">
+    <div className="p-4 py-10 md:p-30 lg:px-40 xl:px-60 bg-white">
       <div className="bg-[url('/images/newsletter_photo.png')] bg-no-repeat bg-cover h-50 md:h-80 xl:h-160 rounded-t-4xl"></div>
       <div className="bg-black rounded-b-4xl p-4 md:p-8 xl:px-15 py-8 md:py-12 lg:py-20">
         <h2 className="text-white text-[6vw]  md:text-[3.5vw] xl:text-[3vw] font-Oswald font-semibold uppercase leading-6 md:leading-8 lg:leading-12 xl:leading-18 mb-4 md:mb-4 text-center ">

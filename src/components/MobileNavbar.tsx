@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { navLinks } from "../lib/navLinks";
 import { IoCloseSharp } from "react-icons/io5";
+import { NavLink } from "react-router";
 
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -27,16 +28,26 @@ const MobileNavbar = () => {
           </button>
         </div>
       </div>
-      <ul tabIndex={-1} className={`${isOpen ? "block" : "hidden"} absolute bg-primary-dark z-1 mt-3 w-full  shadow uppercase`}>
-        {navLinks.map((link, i) => (
-          <li className="border-b p-2 px-4" key={i}>
-            <a href={link.href} key={link.key}>
+      <ul
+        tabIndex={-1}
+        className={`${isOpen ? "block" : "hidden"} absolute bg-primary-dark z-1 mt-3 w-full  shadow uppercase`}
+      >
+        {navLinks.map((link) => (
+          <li className="border-b p-2 px-4" key={link.key}>
+            <NavLink
+              to={link.href}
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                isActive ? "mobile-nav-link-active" : ""
+              }
+            >
               {link.label}
-            </a>
+            </NavLink>
           </li>
         ))}
         <li className="p-3">
-             <a className="bg-white text-black p-2 rounded">Invite Tunde Adisa</a>
+          <a className="bg-white text-black p-2 rounded">Invite Tunde Adisa</a>
         </li>
       </ul>
     </div>

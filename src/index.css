@@ -31,6 +31,134 @@
   } */
 }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .site-page {
+    animation: page-enter 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+    transition:
+      opacity 650ms ease,
+      transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    will-change: opacity, transform;
+  }
+
+  .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    will-change: auto;
+  }
+
+  a,
+  button,
+  [role="button"] {
+    transition:
+      color 180ms ease,
+      background-color 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease,
+      opacity 180ms ease;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    body[data-custom-cursor="true"] {
+      cursor: none;
+    }
+
+    body[data-custom-cursor="true"] a,
+    body[data-custom-cursor="true"] button,
+    body[data-custom-cursor="true"] [role="button"] {
+      cursor: none;
+    }
+
+    body[data-custom-cursor="true"] :is(input, textarea, select, [contenteditable="true"]) {
+      cursor: auto;
+    }
+
+    a:is([class*="rounded"], [class*="btn"], [class*="border"]):hover,
+    button:hover,
+    [role="button"]:hover {
+      transform: translateY(-2px);
+    }
+
+    article {
+      transition:
+        transform 240ms ease,
+        box-shadow 240ms ease;
+    }
+
+    article:hover {
+      transform: translateY(-3px);
+    }
+
+    a img {
+      transition: transform 240ms ease;
+    }
+
+    a:hover img {
+      transform: scale(1.025);
+    }
+  }
+
+  .cursor-label {
+    white-space: nowrap;
+  }
+
+  .nav-link-active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.35em;
+  }
+
+  .mobile-nav-link-active {
+    display: block;
+    margin: -0.5rem -1rem;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .custom-cursor[data-mode="view"] {
+    background-color: #fff;
+  }
+
+  @keyframes page-enter {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
 
 @theme {
   --color-primary-dark: #000000C9;
@@ -39,8 +167,27 @@
   --color-text-dark: #000000;
   --color-text-white: #ffffff;
   --color-text-ash: #A3A3A3;
+  --color-bg-ash: #FCFCFC;
 
-  
+  --color-icon-bg-green: #34C75933;
+  --color-icon-green: #04786E;
+
+  --color-icon-bg-blue: #D7E8FD;
+  --color-icon-blue: #0D53D2;
+
+  --color-icon-bg-lilac: #E8E1FD;
+  --color-icon-lilac: #502BC0;
+
+  --color-icon-bg-yellow: #FCEFE0;
+  --color-icon-yellow: #7C5317;
+
+  --color-icon-bg-lightgreen: #CDEFF2;
+  --color-icon-lightgreen: #096E8E;
+
+  --color-icon-bg-red: #FEDFE9;
+  --color-icon-red: #9B476E;
+
+
   --color-line-ash: #D9D9D9;
 
   --font-Instrument: "Instrument Sans", sans-serif;

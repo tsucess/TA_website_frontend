@@ -74,3 +74,9 @@ export default defineConfig([
 
 ```
 "# TA_website_frontend" 
+
+Also Improved most of our platforms security
+I updated the dates on all pages across makemation festival website
+I implemented info section date and button on link on the herosection of AI4Elections website
+
+i reviewed the codes on Kokokah project

@@ -28,7 +28,7 @@ const MoldForData = [
 
 const MoldForSection = () => {
   return (
-    <div className="bg-white text-black p-6 md:px-16 lg:py-11 lg:pt-22">
+    <section className="bg-white text-black p-6 md:px-16 lg:py-11 lg:pt-22">
       <div>
         <p className="text-[4vw] md:text-[1.5vw] mb-2">WHO IS MOLD FOR?</p>
         <h2 className="text-[7.6vw]  md:text-[3.5vw] xl:text-[4vw] font-Oswald font-bold uppercase leading-9 lg:leading-12 xl:leading-18 mb-4 md:mb-6 ">
@@ -57,7 +57,7 @@ const MoldForSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

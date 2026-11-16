@@ -1,5 +1,6 @@
-import { Suspense, lazy } from "react";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { Suspense, lazy, useEffect, useRef } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router";
+import CustomCursor from "./components/CustomCursor";
 
 
 const Homepage = lazy(() => import("./pages/Home"));
@@ -12,10 +13,86 @@ const Resources = lazy(() => import("./pages/Resources"));
 const Services = lazy(() => import("./pages/Services"));
 const Speaking = lazy(() => import("./pages/Speaking"));
 
+function SiteEffects() {
+  const location = useLocation();
+  const pageRef = useRef<HTMLDivElement>(null);
 
-function App() {
+  useEffect(() => {
+    const page = pageRef.current;
+    if (!page) return;
+
+    if (!("IntersectionObserver" in window)) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+    );
+
+    const reveal = (element: Element) => {
+      if (element.classList.contains("scroll-reveal")) return;
+      element.classList.add("scroll-reveal");
+      observer.observe(element);
+    };
+
+    const observeSections = (root: ParentNode) => {
+      if (root instanceof Element && root.matches("section, article")) {
+        reveal(root);
+      }
+
+      root.querySelectorAll("section, article").forEach((section) => {
+        reveal(section);
+      });
+    };
+
+    const observePageContent = () => {
+      const routeContent = page.firstElementChild;
+      if (!routeContent || routeContent.matches("[role='status']")) return;
+
+      Array.from(routeContent.children).forEach((component) => {
+        if (
+          !component.matches("section, article") &&
+          !component.querySelector("section, article")
+        ) {
+          reveal(component);
+        }
+      });
+
+      observeSections(page);
+    };
+
+    observePageContent();
+    const mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node instanceof Element) {
+            observeSections(node);
+          }
+        });
+      });
+      observePageContent();
+    });
+
+    mutationObserver.observe(page, { childList: true, subtree: true });
+
+    return () => {
+      mutationObserver.disconnect();
+      observer.disconnect();
+    };
+  }, [location.pathname]);
+
   return (
-      <BrowserRouter>
+    <>
+      <CustomCursor />
+      <div key={location.pathname} ref={pageRef} className="site-page">
         <Suspense fallback={<div role="status" className="w-auto h-auto text-center p-4">Loading page...</div>}>
           <Routes>
             <Route path="/" element={<Homepage />}/>
@@ -29,8 +106,16 @@ function App() {
             <Route path="/speaking" element={<Speaking />} />
           </Routes>
         </Suspense>
-      </BrowserRouter>
-    
+      </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <SiteEffects />
+    </BrowserRouter>
   );
 }
 

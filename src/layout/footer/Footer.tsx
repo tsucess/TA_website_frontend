@@ -1,6 +1,7 @@
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { navLinks, footerLinks } from "../../lib/navLinks";
 import { FaXTwitter } from "react-icons/fa6";
+import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
@@ -17,24 +18,36 @@ const Footer = () => {
           </p>
         </div>
         <div className="basis-1/5">
-          <ul tabIndex={-1} className="text-[0.9rem] md:text-[0.75rem] lg:text-[1.1rem]">
-            {navLinks.map((link, i) => (
-              <li className="border-b p-2 px-6 md:px-2" key={i}>
-                <a href={link.href} key={link.key}>
+          <ul
+            tabIndex={-1}
+            className="text-[0.9rem] md:text-[0.75rem] lg:text-[1.1rem]"
+          >
+            {navLinks.map((link) => (
+              <li className="border-b p-2 px-6 md:px-2" key={link.key}>
+                <NavLink
+                  to={link.href}
+                  end
+                  className={({ isActive }) =>
+                    isActive ? "nav-link-active" : ""
+                  }
+                >
                   {link.label}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
         </div>
         <div className="basis-1/5 mb-4">
-          <ul tabIndex={-1} className="text-[0.9rem] md:text-[0.75rem] lg:text-[1.1rem]">
+          <ul
+            tabIndex={-1}
+            className="text-[0.9rem] md:text-[0.75rem] lg:text-[1.1rem]"
+          >
             {footerLinks.map((link, i) => (
-              <li className="border-b p-2 px-6 md:px-2" key={i}>
-                <a href={link.href} key={link.key}>
+              <a href={link.href} key={link.key}>
+                <li className="border-b p-2 px-6 md:px-2" key={i}>
                   {link.label}
-                </a>
-              </li>
+                </li>
+              </a>
             ))}
           </ul>
         </div>
@@ -54,7 +67,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center p-4 border-t border-white">
-        <p className="text-[3.5vw] md:text-[1.5vw] lg:text-[1rem] font-Instrument mb-3">Copyright c 2026 Tunde Adisa | All Rights Reserved</p>
+        <p className="text-[3.5vw] md:text-[1.5vw] lg:text-[1rem] font-Instrument mb-3">
+          Copyright c 2026 Tunde Adisa | All Rights Reserved
+        </p>
       </div>
     </div>
   );

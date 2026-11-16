@@ -24,7 +24,7 @@ const UpcomingEventsData = [
 
 const UpcomingEventsSections = () => {
   return (
-    <div className="bg-black text-white p-6 md:px-16 lg:py-11 lg:pt-22">
+    <section className="bg-black text-white p-6 md:px-16 lg:py-11 lg:pt-22">
       <div>
         <p className="text-[4vw] md:text-[1.5vw] mb-2">Upcoming Events</p>
         <h2 className="text-[8vw]  md:text-[3.5vw] xl:text-[4vw] font-Oswald font-bold uppercase leading-9 lg:leading-12 xl:leading-18">
@@ -51,7 +51,7 @@ const UpcomingEventsSections = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

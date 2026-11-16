@@ -24,7 +24,7 @@ const MoldData = [
 
 const MoldSection = () => {
   return (
-    <div className="flex flex-col md:flex-row p-6 py-12 md:px-16 bg-black text-white">
+    <div className="flex flex-col md:flex-row p-6 py-12 md:px-16 bg-black text-white mt-40">
       <div className="basis-2/6 ">
         <h2 className="text-[8vw]  md:text-[3.5vw] xl:text-[4vw] font-Oswald font-bold uppercase leading-9 lg:leading-12 xl:leading-18 mb-8 md:mb-4 ">
           MOLD
