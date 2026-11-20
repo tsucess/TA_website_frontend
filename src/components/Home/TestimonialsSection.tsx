@@ -12,28 +12,28 @@ const testimonials = [
     role: "Software Developer",
   },
   {
-    photo: assetUrl("/images/Figure%20(3).png"),
+    photo: assetUrl("/images/slider_image_1.png"),
     quote:
       "Sample testimonial: The sessions gave me practical tools to lead with confidence and make meaningful progress toward my goals.",
     name: "Sample Participant,",
     role: "Bootcamp Member",
   },
   {
-    photo: assetUrl("/images/Figure%20(4).png"),
+    photo: assetUrl("/images/slider_image_1.png"),
     quote:
       "Sample testimonial: I left with a clearer sense of direction, a stronger mindset, and steps I could put into action right away.",
     name: "Sample Participant,",
     role: "Bootcamp Member",
   },
   {
-    photo: assetUrl("/images/Figure%20(5).png"),
+    photo: assetUrl("/images/slider_image_1.png"),
     quote:
       "Sample testimonial: The experience challenged me to grow and helped me build habits that support my personal development.",
     name: "Sample Participant,",
     role: "Bootcamp Member",
   },
   {
-    photo: assetUrl("/images/Figure%20(6).png"),
+    photo: assetUrl("/images/slider_image_1.png"),
     quote:
       "Sample testimonial: I appreciated the thoughtful guidance and practical lessons. I now feel better prepared for the next chapter.",
     name: "Sample Participant,",
