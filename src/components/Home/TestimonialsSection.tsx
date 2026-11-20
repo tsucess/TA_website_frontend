@@ -40,7 +40,7 @@ const testimonials = [
     role: "Bootcamp Member",
   },
   {
-    photo: assetUrl("/images/Figure%20(7).png"),
+    photo: assetUrl("/images/slider_image_1.png"),
     quote:
       "Sample testimonial: The community and coaching helped me reflect on my purpose and take a more intentional path forward.",
     name: "Sample Participant,",
