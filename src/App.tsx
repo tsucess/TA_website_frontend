@@ -1,6 +1,7 @@
 import { Suspense, lazy, useEffect, useRef } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 import CustomCursor from "./components/CustomCursor";
+import Loader from "./components/Loader";
 
 
 const Homepage = lazy(() => import("./pages/Home"));
@@ -93,7 +94,7 @@ function SiteEffects() {
     <>
       <CustomCursor />
       <div key={location.pathname} ref={pageRef} className="site-page">
-        <Suspense fallback={<div role="status" className="w-auto h-auto text-center p-4">Loading page...</div>}>
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<Homepage />}/>
             <Route path="/about" element={<About/>} />

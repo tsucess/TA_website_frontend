@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/pst_frontend/',
+  // base: '/pst_frontend/',
 })
 
