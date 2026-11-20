@@ -1,1 +1,0 @@
-import{i as e,r as t,t as n}from"./index-DXsdXyZH.js";var r=e(t(),1),i=n();function a({children:e,rounded:t=!0}){let n=r.Children.toArray(e);return(0,i.jsx)(`main`,{children:n.map((e,n)=>(0,i.jsx)(`div`,{className:`sticky top-0 h-screen`,style:{zIndex:n+1},children:(0,i.jsx)(`div`,{className:`h-full ${t?`rounded-t-3xl`:``}`,children:e})},n))})}export{a as t};
