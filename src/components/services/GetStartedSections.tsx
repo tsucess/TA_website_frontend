@@ -1,24 +1,25 @@
+import { assetUrl } from "../../lib/assets";
 const getStartedData = [
   {
     title: "1. Choose a service",
     description:
       "Explore the available options and identify the service that best matches your needs.",
-    image_url: "../images/mentoring.png",
+    image_url: assetUrl("../images/mentoring.png"),
   },
   {
     title: "2. Reach out",
     description: "Contact the team by email or phone to explain what you are looking for and ask questions about the service.",
-    image_url: "../images/mold_act.png",
+    image_url: assetUrl("../images/mold_act.png"),
   },
   {
     title: "3. Discuss the details",
     description: "Confirm suitability, availability, format, fees and any other arrangements before proceeding.",
-    image_url: "../images/mentoring.png",
+    image_url: assetUrl("../images/mentoring.png"),
   },
   {
     title: "4. Agree on next steps",
     description: "If the service is suitable and both parties agree, the team will explain the next steps for scheduling and payment.",
-    image_url: "../images/mold_act.png",
+    image_url: assetUrl("../images/mold_act.png"),
   },
 ];
 

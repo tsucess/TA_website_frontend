@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { FaCheckCircle } from "react-icons/fa";
 
 const FaithSection = () => {
@@ -46,7 +47,7 @@ const FaithSection = () => {
         </div>
       </div>
       <div className="basis-1/2 flex justify-center">
-        <img src="../images/Tunde_speaking.png" alt="Pst. Tunde Adisa Photo" />
+        <img src={assetUrl("../images/Tunde_speaking.png")} alt="Pst. Tunde Adisa Photo" />
       </div>
     </div>
   );

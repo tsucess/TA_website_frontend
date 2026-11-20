@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { GoArrowUpRight } from "react-icons/go";
 // import { RiArrowRightUpLine } from "react-icons/ri";
 
@@ -7,7 +8,7 @@ const booksData = [
     sub_title: "MOLD BOOTCAMP 1.0",
     // description:
     //   "MOLD Bootcamp 2.0 brought participants together around personal growth, clarity, purpose and intentional action, with Pastor Tunde Adisa and Dr. Sam Adeyemi among the featured voices.",
-    image_url: "/images/mold_flier.png",
+    image_url: assetUrl("/images/mold_flier.png"),
     url: "#",
   },
   {
@@ -15,7 +16,7 @@ const booksData = [
     sub_title: "MOLD BOOTCAMP 2.0",
     // description:
     //   "MOLD Bootcamp 2.0 brought participants together around personal growth, clarity, purpose and intentional action, with Pastor Tunde Adisa and Dr. Sam Adeyemi among the featured voices.",
-    image_url: "/images/mold_flier_2.png",
+    image_url: assetUrl("/images/mold_flier_2.png"),
     url: "#",
   },
   {
@@ -23,7 +24,7 @@ const booksData = [
     sub_title: "MOLD BOOTCAMP 3.0",
     // description:
     //   "The publicly listed UK Family Life session was free with registration required and was aimed at parents, couples, singles preparing for family life, and others interested in building stronger homes.",
-    image_url: "/images/mold_flier_3.png",
+    image_url: assetUrl("/images/mold_flier_3.png"),
     url: "#",
   },
 ];

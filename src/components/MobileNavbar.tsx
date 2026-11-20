@@ -1,3 +1,4 @@
+import { assetUrl } from "../lib/assets";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { navLinks } from "../lib/navLinks";
@@ -15,7 +16,7 @@ const MobileNavbar = () => {
     <div className="w-full">
       <div className="flex justify-between p-3">
         <a className="btn btn-ghost text-xl">
-          <img src="./images/logo.png" alt="Tunde Logo" />
+          <img src={assetUrl("./images/logo.png")} alt="Tunde Logo" />
         </a>
         <div tabIndex={0} role="button" className="p-2 ">
           <button

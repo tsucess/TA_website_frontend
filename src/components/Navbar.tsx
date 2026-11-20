@@ -1,3 +1,4 @@
+import { assetUrl } from "../lib/assets";
 // import { useState } from "react";
 import MobileNavbar from "./MobileNavbar";
 import { navLinks } from "../lib/navLinks";
@@ -10,7 +11,7 @@ const Navbar = () => {
         <MobileNavbar />
       </div>
       <a className="hidden lg:flex">
-        <img src="./images/logo.png" alt="Tunde Logo" />
+        <img src={assetUrl("./images/logo.png")} alt="Tunde Logo" />
       </a>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-2.5 lg:gap-4 px-1 text-[1.2vw] font-Oswald">

@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { RiArrowRightUpLine } from "react-icons/ri";
 
 const experienceData = [
@@ -5,25 +6,25 @@ const experienceData = [
     title: "RELEVANT",
     description:
       "The conversation connects with the realities of the audience.",
-    image_url: "../images/mentoring.png",
+    image_url: assetUrl("../images/mentoring.png"),
   },
   {
     title: "PRACTICAL",
     description:
       "Ideas are connected to real-life application.",
-    image_url: "../images/mold_act.png",
+    image_url: assetUrl("../images/mold_act.png"),
   },
   {
     title: "THOUGHT-PROVOKING",
     description:
       "The goal is not simply to inform, but to encourage reflection.",
-    image_url: "../images/mentoring.png",
+    image_url: assetUrl("../images/mentoring.png"),
   },
   {
     title: "ACTION-ORIENTED",
     description:
       "The conversation should leave people with something to think about and act on.",
-    image_url: "../images/mold_act.png",
+    image_url: assetUrl("../images/mold_act.png"),
   },
 ];
 

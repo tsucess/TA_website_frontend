@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 const ConversationChannelsSection = () => {
   return (
     <section className="p-6 py-18 lg:px-16 lg:py-22">
@@ -17,28 +18,28 @@ const ConversationChannelsSection = () => {
         <div className="flex flex-row  justify-between items-center mb-8">
           <a href="#">
             <img
-              src="./images/logos/sportify.png"
+              src={assetUrl("./images/logos/sportify.png")}
               alt="Sportify Logo"
               className="w-[14vw] md:w-[8vw] "
             />
           </a>
           <a href="#">
             <img
-              src="./images/logos/apple-podcast.png"
+              src={assetUrl("./images/logos/apple-podcast.png")}
               className="w-[14vw] md:w-[8vw] "
               alt="Apple Podcast Logo"
             />
           </a>
           <a href="#">
             <img
-              src="./images/logos/youtube.png"
+              src={assetUrl("./images/logos/youtube.png")}
               alt="Youtube Logo"
               className="w-[14vw] md:w-[8vw] border border-gray-200"
             />
           </a>
           <a href="#">
             <img
-              src="./images/logos/audio-mack.png"
+              src={assetUrl("./images/logos/audio-mack.png")}
               alt="Audio Mack Logo"
               className="w-[14vw] md:w-[8vw] border border-gray-200"
             />
@@ -47,28 +48,28 @@ const ConversationChannelsSection = () => {
         <div className="flex flex-row  justify-between items-center">
           <a href="#">
             <img
-              src="./images/logos/sportify.png"
+              src={assetUrl("./images/logos/sportify.png")}
               alt="Sportify Logo"
               className="w-[14vw] md:w-[8vw] "
             />
           </a>
           <a href="#">
             <img
-              src="./images/logos/apple-podcast.png"
+              src={assetUrl("./images/logos/apple-podcast.png")}
               className="w-[14vw] md:w-[8vw] "
               alt="Apple Podcast Logo"
             />
           </a>
           <a href="#">
             <img
-              src="./images/logos/youtube.png"
+              src={assetUrl("./images/logos/youtube.png")}
               alt="Youtube Logo"
               className="w-[14vw] md:w-[8vw] border border-gray-200"
             />
           </a>
           <a href="#">
             <img
-              src="./images/logos/audio-mack.png"
+              src={assetUrl("./images/logos/audio-mack.png")}
               alt="Audio Mack Logo"
               className="w-[14vw] md:w-[8vw] border border-gray-200"
             />

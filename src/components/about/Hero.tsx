@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 // import React from "react";
 import Header from "../../layout/header/Header";
 
@@ -18,7 +19,7 @@ const Hero = () => {
           </p>
         </div>
         <div className=" basis-5/11">
-          <img className="xl:h-150" src="/images/TA_about_hero_image.png" alt="Tunde Adisa Photo" />
+          <img className="xl:h-150" src={assetUrl("/images/TA_about_hero_image.png")} alt="Tunde Adisa Photo" />
         </div>
       </div>
     </div>

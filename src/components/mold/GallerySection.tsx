@@ -1,30 +1,31 @@
+import { assetUrl } from "../../lib/assets";
 const GalleryData = [
   {
-    image_url: "/images/gallery_1.png",
+    image_url: assetUrl("/images/gallery_1.png"),
   },
   {
-    image_url: "/images/gallery_2.png",
+    image_url: assetUrl("/images/gallery_2.png"),
   },
   {
-    image_url: "/images/gallery_3.png",
+    image_url: assetUrl("/images/gallery_3.png"),
   },
   {
-    image_url: "/images/gallery_4.png",
+    image_url: assetUrl("/images/gallery_4.png"),
   },
   {
-    image_url: "/images/gallery_5.png",
+    image_url: assetUrl("/images/gallery_5.png"),
   },
   {
-    image_url: "/images/gallery_6.png",
+    image_url: assetUrl("/images/gallery_6.png"),
   },
   {
-    image_url: "/images/gallery_7.png",
+    image_url: assetUrl("/images/gallery_7.png"),
   },
   {
-    image_url: "/images/gallery_8.png",
+    image_url: assetUrl("/images/gallery_8.png"),
   },
   {
-    image_url: "/images/gallery_9.png",
+    image_url: assetUrl("/images/gallery_9.png"),
   },
 ];
 

@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 
 
 const BioSection = () => {
@@ -25,7 +26,7 @@ const BioSection = () => {
         </p>
       </div>
       <div className="basis-1/2 flex justify-center">
-        <img src="../images/Bio_Tunde.png" alt="Pst. Tunde Adisa Photo" />
+        <img src={assetUrl("../images/Bio_Tunde.png")} alt="Pst. Tunde Adisa Photo" />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -46,7 +47,7 @@ const MoldSection = () => {
         </div>
       </div>
       <div className="basis-1/2 flex justify-center">
-        <img src="../images/Mold_Tunde.png" alt="Pst. Tunde Adisa Photo" />
+        <img src={assetUrl("../images/Mold_Tunde.png")} alt="Pst. Tunde Adisa Photo" />
       </div>
     </div>
   );

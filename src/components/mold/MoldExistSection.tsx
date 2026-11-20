@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { RiArrowRightUpLongLine } from "react-icons/ri";
 
 const MoldExistSection = () => {
@@ -34,7 +35,7 @@ const MoldExistSection = () => {
         </div>
       </div>
       <div className="basis-1/2 flex justify-center">
-        <img src="../images/TA_mold_photo.png" alt="Pst. Tunde Adisa Photo" />
+        <img src={assetUrl("../images/TA_mold_photo.png")} alt="Pst. Tunde Adisa Photo" />
       </div>
     </section>
   );

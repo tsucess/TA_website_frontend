@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { RiArrowRightUpLine } from "react-icons/ri";
 
 const AuthorSection = () => {
@@ -5,7 +6,7 @@ const AuthorSection = () => {
     <section className="p-6 py-18 lg:px-16 lg:py-22">
       <div className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-6 xl:gap-0 ">
         <div className="basis-1/2">
-          <img src="../images/Tunde_author.png" alt="Feature Resource Image" />
+          <img src={assetUrl("../images/Tunde_author.png")} alt="Feature Resource Image" />
         </div>
         <div className="basis-1/2 flex flex-col justify-end">
           <p className="text-[4vw] md:text-[1.5vw] font-Oswald font-semibold mb-2">

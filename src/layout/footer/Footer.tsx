@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { navLinks, footerLinks } from "../../lib/navLinks";
 import { FaXTwitter } from "react-icons/fa6";
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-6 xl:gap-18 pb-10 md:p-4 md:pb-10 lg:p-18">
         <div className="basis-2/5 flex flex-col gap-4 p-6 md:p-2">
           <a className="btn btn-ghost text-xl">
-            <img src="./images/logo.png" alt="Tunde Logo" />
+            <img src={assetUrl("./images/logo.png")} alt="Tunde Logo" />
           </a>
           <p className="text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-Instrument mb-3 md:mb-6">
             Pastor Tunde Adisa is a pastor, business coach and mentor passionate

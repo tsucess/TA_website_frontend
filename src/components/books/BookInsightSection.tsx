@@ -1,24 +1,25 @@
+import { assetUrl } from "../../lib/assets";
 const bookInsightData = [
   {
     title: "CLARITY",
     description:
       "Verified Description",
-    image_url: "../images/mentoring.png",
+    image_url: assetUrl("../images/mentoring.png"),
   },
   {
     title: "GROWTH",
     description: "Verified Description",
-    image_url: "../images/mold_act.png",
+    image_url: assetUrl("../images/mold_act.png"),
   },
   {
     title: "PURPOSE",
     description: "Verified Description",
-    image_url: "../images/mentoring.png",
+    image_url: assetUrl("../images/mentoring.png"),
   },
   {
     title: "INTENTIONAL LIVING",
     description: "Verified Description",
-    image_url: "../images/mold_act.png",
+    image_url: assetUrl("../images/mold_act.png"),
   },
 ];
 

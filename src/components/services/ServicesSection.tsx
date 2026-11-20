@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { FaCheckCircle } from "react-icons/fa";
 
 const ServicesData = [
@@ -15,7 +16,7 @@ const ServicesData = [
       "Family relationships and shared values",
       "Working through challenging seasons together",
     ],
-    services_image: "../images/services_1.png",
+    services_image: assetUrl("../images/services_1.png"),
   },
   {
     title: "Coaching & Mentoring",
@@ -31,7 +32,7 @@ const ServicesData = [
       "Discipline and accountability",
       "Navigating personal or professional transitions",
     ],
-    services_image: "../images/services_2.png",
+    services_image: assetUrl("../images/services_2.png"),
   },
   {
     title: "Therapy",
@@ -46,7 +47,7 @@ const ServicesData = [
       "Understanding recurring patterns",
       "Personal well-being and resilience",
     ],
-    services_image: "../images/services_3.png",
+    services_image: assetUrl("../images/services_3.png"),
   },
 ];
 

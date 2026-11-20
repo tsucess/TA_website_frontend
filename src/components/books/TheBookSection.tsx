@@ -1,10 +1,11 @@
+import { assetUrl } from "../../lib/assets";
 const TheBookSection = () => {
   return (
     <section className="p-6 py-18 lg:px-16 lg:py-22">
       <div className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-6 xl:gap-0 ">
         <div className="basis-1/2">
           <img
-            src="../images/featured_resource_image.png"
+            src={assetUrl("../images/featured_resource_image.png")}
             alt="Feature Resource Image"
           />
         </div>

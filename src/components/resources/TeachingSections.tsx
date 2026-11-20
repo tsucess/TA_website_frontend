@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { FiCalendar, FiClock, FiVideo } from "react-icons/fi";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import FilterFeature from "./FilterFeature";
@@ -19,7 +20,7 @@ const TeachingSections = () => {
             life.
           </p>
           <img
-            src="../images/featured_resource_image.png"
+            src={assetUrl("../images/featured_resource_image.png")}
             alt="Feature Resource Image"
           />
         </div>

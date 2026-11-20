@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { FiCalendar, FiClock } from "react-icons/fi";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import ArticlesFilterSection from "./ArticlesFilterSection";
@@ -18,7 +19,7 @@ const ArticlesSection = () => {
             faith, leadership, purpose, relationships and life.
           </p>
           <img
-            src="../images/featured_resource_image.png"
+            src={assetUrl("../images/featured_resource_image.png")}
             alt="Feature Resource Image"
           />
         </div>

@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 const HowCanIHelpSections = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-12 xl:gap-14 p-6 py-18 md:px-16 lg:py-22">
@@ -17,7 +18,7 @@ const HowCanIHelpSections = () => {
         </p>
       </div>
       <div className="basis-1/2 flex justify-center">
-        <img src="../images/Bio_Tunde.png" alt="Pst. Tunde Adisa Photo" />
+        <img src={assetUrl("../images/Bio_Tunde.png")} alt="Pst. Tunde Adisa Photo" />
       </div>
     </div>
   );

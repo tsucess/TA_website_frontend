@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { FaCheckCircle } from "react-icons/fa";
 import { RiArrowRightUpLine } from "react-icons/ri";
 
@@ -15,7 +16,7 @@ const MoldEventSection = () => {
       <div className="flex flex-col-reverse md:flex-row bg-white gap-8 md:gap-12 xl:gap-14 ">
         <div className="basis-1/2 flex justify-center">
           <img
-            src="../images/mold_event_flier.png"
+            src={assetUrl("../images/mold_event_flier.png")}
             alt="Pst. Tunde Adisa Photo"
           />
         </div>

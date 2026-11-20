@@ -1,9 +1,10 @@
+import { assetUrl } from "../../lib/assets";
 const PurposeSection = () => {
   return (
     <div className="bg-white text-black p-6 py-12 md:px-16 lg:py-11">
       <div className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-10  mb-8">
         <div className="text-white md:basis-1/2 flex flex-col justify-end w-full  rounded-3xl">
-          <img src="/images/TA_purpose_image.png" alt="TA Purpose Photo" />
+          <img src={assetUrl("/images/TA_purpose_image.png")} alt="TA Purpose Photo" />
         </div>
         <div className="basis-1/2 flex flex-col justify-end">
           <p className="text-[4vw] md:text-[1.5vw] mb-2">A LIFE OF PURPOSE</p>

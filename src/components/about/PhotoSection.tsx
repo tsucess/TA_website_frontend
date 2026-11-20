@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 
 
 const PhotoSection = () => {
@@ -17,17 +18,17 @@ const PhotoSection = () => {
       <div className="flex flex-col md:flex-row gap-4 lg:gap-6 ">
         <img
           className="md:w-50 md:basis-1/3 rounded-2xl"
-          src="/images/photo_1.png"
+          src={assetUrl("/images/photo_1.png")}
           alt=""
         />
         <img
           className="md:w-50 md:basis-1/3 rounded-2xl"
-          src="/images/photo_2.png"
+          src={assetUrl("/images/photo_2.png")}
           alt=""
         />
         <img
           className="md:w-50 md:basis-1/3 rounded-2xl"
-          src="/images/photo_3.png"
+          src={assetUrl("/images/photo_3.png")}
           alt=""
         />
       </div>

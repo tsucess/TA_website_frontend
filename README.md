@@ -80,3 +80,9 @@ I updated the dates on all pages across makemation festival website
 I implemented info section date and button on link on the herosection of AI4Elections website
 
 i reviewed the codes on Kokokah project
+
+## GitHub Pages deployment
+
+The workflow in `.github/workflows/deploy.yml` builds and deploys the production site on pushes to `main`.
+Set the repository's Pages source to **GitHub Actions**. The project site is available at
+`https://tsucess.github.io/tundeadisa/`.

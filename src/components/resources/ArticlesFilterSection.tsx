@@ -1,3 +1,4 @@
+import { assetUrl } from "../../lib/assets";
 import { useState } from "react";
 import { BsGrid } from "react-icons/bs";
 import { CiGrid42 } from "react-icons/ci";
@@ -31,25 +32,25 @@ const TeachingsData = [
     title: "Personal Growth. Gaining Clarity.",
     sub_title: "Purpose",
     url: "#",
-    image_url: "/images/mold_flier.png",
+    image_url: assetUrl("/images/mold_flier.png"),
   },
   {
     title: "Personal Growth. Gaining Clarity.",
     sub_title: "Leadership",
     url: "#",
-    image_url: "/images/mold_flier_3.png",
+    image_url: assetUrl("/images/mold_flier_3.png"),
   },
   {
     title: "Personal Growth. Gaining Clarity.",
     sub_title: "Family",
     url: "#",
-    image_url: "/images/mold_flier.png",
+    image_url: assetUrl("/images/mold_flier.png"),
   },
   {
     title: "MOLD Family Life UK",
     sub_title: "Relationships",
     url: "#",
-    image_url: "/images/mold_flier_3.png",
+    image_url: assetUrl("/images/mold_flier_3.png"),
   },
 ];
 
